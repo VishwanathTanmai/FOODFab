@@ -1,0 +1,246 @@
+<html>
+  <head>
+    
+    <title>Food Fab</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    
+  </head>
+
+  <body>
+    
+    <div class="landing">
+      <div class="landing-interact">
+        <div class="navbar">
+          <div class="branding">
+            <div><img class="logo" src="./src/images/logo.png" /></div>
+            <div class="logo-title">FOODFAB</div>
+          </div>
+          
+            
+        </div>
+        <div class="title">
+          <div id="typewriter" class="changing"></div>
+          <div class="sub-title">Find awesome restaurants near you...</div>
+
+
+          <div class="sub-title">Select your city.</div>
+
+          
+
+        </div>
+        <div class="search">
+          <select
+            id="selection"
+            onchange="updateSelection(); document.getElementById('search').href=`./static/list.html?q=${this.value}`;"
+            class="search-bar"
+            type="text"
+            placeholder="Enter your delivery location"
+          >
+            <option value="" selected style="display: none"
+              >Select your location</option
+            >
+            
+            <option value="11">Ahmedabad</option>
+            <option value="7">Chennai</option>
+            <option value="1">Delhi</option>
+            <option value="6">Hyderabad</option>
+            <option value="2">Kolkata</option>
+            <option value="3">Mumbai</option>
+            <option value="5">Pune</option>
+            <option value="4">Banglore</option>
+            <option value="8">Lucknow</option>
+            <option value="9">Kochi</option>
+            <option value="14">Indore</option>
+            <option value="18">Ooty</option>
+            <option value="24">Allahabad</option>
+            <option value="25">Aurangabad</option>
+            <option value="28">Vizag</option>
+            <option value="30">Coimbatore</option>
+            <option value="36">Mysore</option>
+            <option value="13">Goa</option>
+            <option value="15">Gangtok</option>
+            <option value="26">Bhopal</option>
+            <option value="27">Ranchi</option>
+            <option value="29">Bhubaneshwar</option>
+            <option value="31">Mangalore</option>
+            <option value="33">Nagpur</option>
+            <option value="34">Agra</option>
+            <option value="35">Dehradun</option>
+            <option value="37">Puducherry</option>
+            <option value="38">Surat</option>
+            <option value="39">Varanasi</option>
+            <option value="40">Patna</option>
+            <option value="10">Jaipur</option>
+            <option value="12">Chandigarh</option>
+            <option value="16">Nashik</option>
+            <option value="19">Shimla</option>
+            <option value="20">Ludhiana(punjab)</option>
+            <option value="21">Guwahati</option>
+            <option value="22">Amritsar</option>
+            <option value="23">Kanpur</option>
+            <option value="32">Vadodara</option>
+ 
+          </select>
+          <a id="search" href="#"
+            ><button
+              disabled
+              id="search-button"
+              class="search-bar search-submit"
+              type="submit"
+            >
+              Search
+            </button></a>
+          <script>
+            function updateSelection() {
+              console.log("lol");
+              if (document.getElementById("selection").value == "") {
+                document.getElementById("search-button").disabled = true;
+              } else {
+                document.getElementById("search-button").disabled = false;
+              }
+            }
+          </script>
+        </div>
+        <div class=" cities ">
+          <div class="cities-title">CITIES SERVED IN INDIA</div>
+          <div class="cities-sub-title">
+            Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, Lucknow , Kochi &
+            Pune ......
+          </div>
+        </div>
+      </div>
+      <div class="landing-images ">
+        <img class="landing-image " src="./src/images/4.jpg " />
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/order.png" /></div>
+        <div class="feature-title">Variety & Choices</div>
+        <div class="feature-desc">
+          Loathing for Italian, Thai, Indian or Chinese food? We got restaurants
+          covering many cuisines.
+        </div>
+      </div>
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/ice-cream.png" /></div>
+        <div class="feature-title">Close To You</div>
+        <div class="feature-desc">
+          Get to know awesome resturants near you. Find out what they offer and
+          see customer reviews.
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon">
+      <div class="container">
+        
+      </div>
+      <img src="FOODFab.jpg" alt="Avatar" style="width: 180px;">           
+      <div class="container" style="background-color:rgb(236, 7, 7)">   
+        <h2><b>50% Off Your First order</b></h2>                           
+        <h3>Get 50% off up to Rs 100 off on food orders.                   
+          Minimum cart or order value should be Rs 149.
+          Valid only for select users.Applicable only on few restaurants. You might not add any other Zomato coupons with this offer.</h3>
+      </div>                                                               
+      <div class="container">                                                
+        <p>Use Promo Code: <span class="promo">TRYNEW</span></p>             
+        
+      </div>
+
+
+      <div class="coupon">
+        <div class="container">
+          
+        </div>
+        <img src="FOODFab.jpg" alt="Avatar" style="width:180px;">
+        <div class="container" style="background-color:rgb(255, 0, 0)">
+          <h2><b>Flat Rs.75 Off + Rs. 25-100 Paytm Cashback Via PayTM Wallet</b></h2>
+          <p>Get flat Rs.75 off on  all orders and paytm cashback upto 25-100.Rs .</p>
+        </div>
+        <div class="container">
+          <p>Use Promo Code: <span class="promo">PAYTMFEAST</span></p>
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="coupon">
+      <div class="container">
+        
+      </div>
+      <img src="FOODFab.jpg" alt="Avatar" style="width:180px;">
+      <div class="container" style="background-color:rgb(255, 0, 0)">
+        <h2><b>30% Off + 1000 Paytm Cashback Points On Paying With Paytm Wallet</b></h2>
+        <p>Get Flat 30% Off + 1000 Paytm Cashback Points On Paying With Paytm Wallet.Hurry-up fast!!</p>
+      </div>
+      <div class="container">
+        <p>Use Promo Code: <span class="promo">PAYTMPOINTS</span></p>
+        
+      </div>
+    </div>
+
+    
+
+    <div class="mobile">
+      <div class="mob-1">
+        <img class="mobile-image" src="src/images/phone.png" />
+      </div>
+      <div class="mob-2">
+        <div class="changing">Restaurants in your pocket</div>
+        <div class="sub-title">
+          Discover new restaurants near you on the go, with the all-new Food Fab
+          app.
+        </div>
+        <div class="stores">
+          <img
+            class="store-image"
+            onClick="alertFunction()"
+            src="src/images/play.webp"
+          /><img class="store-image" src="src/images/iOS.webp" onClick="alertFunction()"/>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class='links'>
+        <a href='static/about-us.html' target='_blank'>About Us</a>
+        <a href='static/terms-and-conditions.html' target='_blank'>Terms</a>
+        <a href='static/privacy-policy.html' target='_blank'>Privacy Policy</a>
+        <a href='static/contact.html' target='_blank'>Contact Us</a>
+        <div>
+      <div class="credits">Made by M.Vishwanath Tanmai </div>
+        </div>
+    </div>
+    <footer>Copyright © 2023
+      All Rights are reserved</footer>
+
+    <script>
+      const alertFunction = () => {
+        window.alert("App is in development...");
+      };
+    </script>
+    <script src="./src/js/core.js"></script>
+    <script type="text/javascript">
+      const instance = new Typewriter("#typewriter", {
+        strings: [
+          "Are You Feeling hungry🍴🍴😋😋? Just Order it..",
+          "aapako kya bhookh lag rahee hai ya aap khaane ke lie kuchh khaana chaahate hain 🍴🍴? bas ise ordar karen...",
+          "మీరు ఆకలితో ఉన్నారా🍴? కేవలం ఆర్డర్ చేయండి....",
+          "நீங்கள் பசியாக உணர்கிறீர்களா😋? அதை ஆர்டர் செய்யுங்கள்....",
+          "നിനക്ക് വിശപ്പ് തോന്നുന്നുണ്ടോ😋😋 ?ഓർഡർ ചെയ്താൽ മതി....",
+          "ನೀವು ಹಸಿವಿನಿಂದ ಬಳಲುತ್ತಿದ್ದೀರಾ 🍚🍚🍗? ಅದನ್ನು ಆದೇಶಿಸಿ... ",
+          "আপনি কি ক্ষুধার্ত বোধ করছেন 🍚🍗? শুধু এটা অর্ডার..... ",
+          "Tired ? ☕☕ ?",
+          "Unexpected guests?",
+          "Cooking gone wrong😨😱?",
+          "Gaming night🕹️🕹️🎮🎮?",
+          "Party night💃💃🥳🎉 ?",
+          "Movie night🍿🍿🎬🎬?"
+        ],
+        autoStart: true,
+        loop: true
+      });
+    </script>
+  </body>
+</html>
+
